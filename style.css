@@ -1,0 +1,63 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+html,
+body {
+  background-color: #222;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+button {
+  border: none;
+  padding: 10px 14px;
+  background-color: #0a0;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.8;
+}
+
+button:active:not(:disabled) {
+  background-color: transparent;
+}
+
+a,
+a:visited {
+  color: #0969da;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:active {
+  color: #f60;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: #444;
+  padding: 10px 14px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+#date {
+  color: transparent;
+}
+
+.dateInput {
+  display: none;
+}

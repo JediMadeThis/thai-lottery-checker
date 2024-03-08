@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thai Lottery Checker</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Thai Lottery Checker</h1>
+    <h2>
+      API used:
+      <a href="https://github.com/rayriffy/thai-lotto-api">thai lotto api</a>
+    </h2>
+    <div class="inputsContainer">
+      <button class="dateSelectBtn" id="dateSelectBtn">Select date</button>
+      <input
+        type="date"
+        name=""
+        class="dateInput"
+        id="date"
+        oninput="console.log(document.getElementById('date').value)" />
+      <h3 id="dateDisplay">Selected date: None</h3>
+    </div>
+
+    <button id="checkBtn" disabled>Check</button>
+
+    <div id="entriesContainer">
+      <p>Lottery number must be 6 digits.</p>
+      <input type="number" name="" id="lottInput" max="999999" />
+      <button id="lottAdd" disabled>
+        Add
+      </button>
+      <h2>Entries</h2>
+
+      <div id="entries"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
