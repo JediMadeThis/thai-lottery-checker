@@ -14,24 +14,24 @@
       <a href="https://github.com/rayriffy/thai-lotto-api">thai lotto api</a>
     </h2>
     <div class="inputsContainer">
-      <button class="dateSelectBtn" id="dateSelectBtn">Select date</button>
-      <input
-        type="date"
-        name=""
-        class="dateInput"
-        id="date"
-        oninput="console.log(document.getElementById('date').value)" />
+      <button class="dateSelectBtn" id="dateSelectBtn">
+        Select date of lottery to check
+      </button>
+      <input type="date" name="" class="dateInput" id="date" />
       <h3 id="dateDisplay">Selected date: None</h3>
     </div>
+
+    <br />
+    <br />
 
     <button id="checkBtn" disabled>Check</button>
 
     <div id="entriesContainer">
+      <p>Add your lottery numbers here.</p>
+      <p>Once you've added them all, press the Check button above.</p>
       <p>Lottery number must be 6 digits.</p>
       <input type="number" name="" id="lottInput" max="999999" />
-      <button id="lottAdd" disabled>
-        Add
-      </button>
+      <button id="lottAdd" disabled>Add</button>
       <h2>Entries</h2>
 
       <div id="entries"></div>
