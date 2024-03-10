@@ -128,7 +128,7 @@ async function check(numbers, date) {
           moneyWon += Number(data.prizes[5].reward);
         }
 
-        if (data.runningNumbers[0].number.includes(value.substring(0, 3))) {
+        if (data.runningNumbers[0].number.includes(value.substring(0, 2))) {
           winText += `Won รางวัลเลขหน้า 3 ตัว (${data.runningNumbers[0].reward} baht) for number ${value}\n`;
           moneyWon += Number(data.runningNumbers[0].reward);
         }
