@@ -133,12 +133,12 @@ async function check(numbers, date) {
           moneyWon += Number(data.runningNumbers[0].reward);
         }
 
-        if (data.runningNumbers[1].number.includes(value.substring(4, 6))) {
+        if (data.runningNumbers[1].number.includes(value.substring(3, 6))) {
           winText += `Won รางวัลเลขท้าย 3 ตัว (${data.runningNumbers[1].reward} baht) for number ${value}\n`;
           moneyWon += Number(data.runningNumbers[1].reward);
         }
 
-        if (data.runningNumbers[2].number.includes(value.substring(5, 6))) {
+        if (data.runningNumbers[2].number.includes(value.substring(4, 6))) {
           winText += `Won รางวัลเลขท้าย 2 ตัว (${data.runningNumbers[2].reward} baht) for number ${value}\n`;
           moneyWon += Number(data.runningNumbers[2].reward);
         }
